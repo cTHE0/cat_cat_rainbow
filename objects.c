@@ -26,7 +26,6 @@ void render_objects(SDL_Renderer *renderer) {
     while (local_list != NULL) {
         if (local_list->data.type == DONUT) {
             SDL_RenderCopy(renderer, donut, NULL, &local_list->data.rect);
-            SDL_RenderCopy(renderer, red, NULL, &local_list->data.hitbox);
         }
         else {
             SDL_RenderCopy(renderer, gift, NULL, &local_list->data.rect);
